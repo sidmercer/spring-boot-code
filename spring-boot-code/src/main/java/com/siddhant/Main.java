@@ -15,6 +15,6 @@ public class Main {
 
     @GetMapping("/")
     public String Greet(){
-       return "Hello this is the first API";
+       return "Hello this is the first API !!";
     }
 }
