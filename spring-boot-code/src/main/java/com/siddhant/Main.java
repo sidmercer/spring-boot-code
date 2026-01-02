@@ -12,9 +12,20 @@ public class Main {
 //        System.out.println("Hello, SpringBoot started!!");
         SpringApplication.run(Main.class, args);
     }
-
+//1
     @GetMapping("/")
     public String Greet(){
        return "Hello this is the first API !!";
     }
+//2
+    @GetMapping("/greet")
+    public GreetResponse Greet1(){
+        return new GreetResponse("Hello");
+    }
+
+    record GreetResponse(String greet){}
+
+
+
+
 }
